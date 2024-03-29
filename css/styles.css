@@ -1,0 +1,107 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* This is Primary Color */
+    --Green: hsl(75, 94%, 57%);
+    /* This is Neutral Color */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    font-family: "Inter", sans-serif;
+    background-color: var(--Off-Black);
+    color: var(--White);
+    min-height: 100vh;
+}
+
+.card-container {
+    background-color: var(--Dark-Grey);
+    margin: 1rem 1.25rem;
+    padding:1.25rem 2.2rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 450px;
+}
+
+
+.img-section img {
+    border-radius: 50%;
+    padding: 0.06rem 0.25rem;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.intro-part {
+    padding: 10px 20px;
+    margin: 0.85rem 1rem;
+    text-align: center;
+}
+
+
+.intro-part p {
+    color: var(--Green);
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.role {
+    font-weight: 600;
+    margin: 0.5rem 0.8rem;
+    opacity: 0.8;
+}
+
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    margin: 10px 15px;
+}
+
+ .link {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    margin: 0.70rem 0.65rem;
+    border: 2px solid var(--Grey);
+    border-radius: 10px;
+    background-color: var(--Grey);
+    color: inherit;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+.link:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    color: var(--Off-Black);
+    background-color: var(--Green);
+}
+
+@media screen and (max-width:375px) {
+ .card-container{
+    margin: 1rem auto;
+ }  
+}
